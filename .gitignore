@@ -1,24 +1,36 @@
+# OS and editor files
 .DS_Store
+Thumbs.db
+.vscode/
+.idea/
 __pycache__/
 *.pyc
 *.swp
-.vscode/
-.idea/
 
-# KiCad backup and autosave files
+# KiCad backups, local history, per-user state and lock files
 *-backups/
+.history/
+*.bak
+*_old
+*.kicad_prl
+*.lck
 *.kicad_sch-bak
 *.kicad_pcb-bak
-*~
 _autosave-*
 fp-info-cache
-*.lck
-
-# Build outputs (regenerate from source)
 *.dsn
 *.ses
+*.rpt
+rev0/PCB/jlcpcb/project.db
+rev0/PCB/jlcpcb/gerber.zip
 
-# OS files
-*.DS_Store*
-Thumbs.db.history/
-.history/
+# Office lock files
+~$*
+
+# Raw bench photos and instrument sessions (curated images are in docs/images)
+*.HEIC
+rev0/testing/expirement/
+
+# FPGA exercises, not published yet
+FPGA/
+*.rbf
