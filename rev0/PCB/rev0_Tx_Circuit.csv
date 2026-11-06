@@ -1,0 +1,12 @@
+"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
+1;"C3";"C_0805_2012Metric";1;"2.2uF 16V";;;
+2;"C4, C5, C11, C14, C17, C21";"C_1812_4532Metric";6;"1uF 250V";;;
+3;"C6";"C_0805_2012Metric";1;"1uF";;;
+4;"C7, C10, C13, C16";"C_0805_2012Metric";4;"0.47uF 50V";;;
+5;"C8, C19";"C_0805_2012Metric";2;"1uF 16V";;;
+6;"C9, C12, C15, C18";"C_0805_2012Metric";4;"10nF 200V";;;
+7;"D5, D9, D10, D11";"D_SMA";4;"ES1D";;;
+8;"Q1, Q2";"SOIC-8_3.9x4.9mm_P1.27mm";2;"TC6320";;;
+9;"R12, R13, R15, R16";"R_0805_2012Metric";4;"10K";;;
+10;"U1, U2";"MD1213_VQFN12_4x4_P0.8_EP1.7x1.7";2;"MD1213";;;
+11;"U3";"SOT-23-6";1;"LM2776";;;

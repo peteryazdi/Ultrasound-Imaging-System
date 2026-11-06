@@ -1497,7 +1497,7 @@
 				)
 			)
 		)
-		(property "Value" "470 ohm, 0.25W"
+		(property "Value" "220 0.25W"
 			(at 226.06 46.99 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1657,7 +1657,7 @@
 				)
 			)
 		)
-		(property "Value" "470 ohm, 0.25W"
+		(property "Value" "220 0.25W"
 			(at 227.33 77.47 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1727,7 +1727,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "200a7933-dfc2-4aca-bcf8-b154a62827cf")
-		(property "Reference" "TRIG_OUT_TP1"
+		(property "Reference" "TRIG_OUT1"
 			(at 30.48 53.8479 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1788,7 +1788,7 @@
 		(instances
 			(project "rev0_Tx_Circuit"
 				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/62f441c6-6f3f-45f5-bd08-4c60fffeb5ec"
-					(reference "TRIG_OUT_TP1")
+					(reference "TRIG_OUT1")
 					(unit 1)
 				)
 			)
@@ -2225,7 +2225,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "59f4029f-34f5-47b7-97d6-a3170348cf48")
-		(property "Reference" "TX_1_GND_TP1"
+		(property "Reference" "GND1"
 			(at 45.72 107.1879 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2286,7 +2286,7 @@
 		(instances
 			(project "rev0_Tx_Circuit"
 				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/62f441c6-6f3f-45f5-bd08-4c60fffeb5ec"
-					(reference "TX_1_GND_TP1")
+					(reference "GND1")
 					(unit 1)
 				)
 			)
@@ -2383,7 +2383,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "624cca93-f5dd-477f-83b8-ed1544b8c65c")
-		(property "Reference" "TX_1_TP1"
+		(property "Reference" "TX_1"
 			(at 59.69 107.1879 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2394,7 +2394,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TX_Node_1"
+		(property "Value" "TX_1"
 			(at 59.69 109.7279 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2444,7 +2444,7 @@
 		(instances
 			(project "rev0_Tx_Circuit"
 				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/62f441c6-6f3f-45f5-bd08-4c60fffeb5ec"
-					(reference "TX_1_TP1")
+					(reference "TX_1")
 					(unit 1)
 				)
 			)
@@ -2531,85 +2531,6 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 33.02 48.26 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "87b614f5-6fee-4b0d-a084-07b58df32d30")
-		(property "Reference" "TRIG_OUT_GND_TP1"
-			(at 30.48 43.6879 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "GND"
-			(at 30.48 46.2279 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
-			(at 27.94 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 27.94 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "PCB GND test point"
-			(at 33.02 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d630a90e-5e77-43a6-8a34-3942481363bc")
-		)
-		(instances
-			(project "rev0_Tx_Circuit"
-				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/62f441c6-6f3f-45f5-bd08-4c60fffeb5ec"
-					(reference "TRIG_OUT_GND_TP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
 		(at 57.15 120.65 0)
 		(mirror x)
 		(unit 1)
@@ -2620,7 +2541,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "88fb3cf1-1cfb-41af-88d9-09ca4f6723a3")
-		(property "Reference" "TX_2_TP1"
+		(property "Reference" "TX_2"
 			(at 59.69 125.2221 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2631,7 +2552,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TX_Node_2"
+		(property "Value" "TX_2"
 			(at 59.69 122.6821 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2681,7 +2602,7 @@
 		(instances
 			(project "rev0_Tx_Circuit"
 				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/62f441c6-6f3f-45f5-bd08-4c60fffeb5ec"
-					(reference "TX_2_TP1")
+					(reference "TX_2")
 					(unit 1)
 				)
 			)
@@ -2868,7 +2789,7 @@
 				)
 			)
 		)
-		(property "Value" "470 ohm, 0.25W"
+		(property "Value" "220 0.25W"
 			(at 227.33 90.17 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3132,7 +3053,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b56fe355-71ea-419b-b33d-4f0bd6349fa6")
-		(property "Reference" "TX_2_GND_TP1"
+		(property "Reference" "GND2"
 			(at 45.72 117.3479 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3193,7 +3114,7 @@
 		(instances
 			(project "rev0_Tx_Circuit"
 				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/62f441c6-6f3f-45f5-bd08-4c60fffeb5ec"
-					(reference "TX_2_GND_TP1")
+					(reference "GND2")
 					(unit 1)
 				)
 			)
@@ -3285,85 +3206,6 @@
 			(project "rev0_Tx_Circuit"
 				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/62f441c6-6f3f-45f5-bd08-4c60fffeb5ec"
 					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 33.02 48.26 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ca78667d-1a81-491d-a950-27156358067d")
-		(property "Reference" "#PWR026"
-			(at 33.02 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 26.924 49.784 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 33.02 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 33.02 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 33.02 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a9135146-5a34-480d-b043-f90d851a3253")
-		)
-		(instances
-			(project "rev0_Tx_Circuit"
-				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/62f441c6-6f3f-45f5-bd08-4c60fffeb5ec"
-					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -3483,7 +3325,7 @@
 				)
 			)
 		)
-		(property "Value" "100K, 0.25W"
+		(property "Value" "6.8K 2W"
 			(at 226.06 58.42 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3493,7 +3335,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0617_L17.0mm_D6.0mm_P20.32mm_Horizontal"
 			(at 226.06 64.008 90)
 			(hide yes)
 			(show_name no)

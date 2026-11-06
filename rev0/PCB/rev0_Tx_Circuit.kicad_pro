@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.1,
-          "height": 2.2,
-          "width": 2.2
+          "drill": 3.2,
+          "height": 6.4,
+          "width": 6.4
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -106,7 +106,7 @@
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
@@ -154,7 +154,7 @@
           "td_onpthpad": true,
           "td_onroundshapesonly": false,
           "td_onsmdpad": true,
-          "td_ontrackend": false,
+          "td_ontrackend": true,
           "td_onvia": true
         }
       ],
@@ -257,7 +257,28 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "lib_symbol_mismatch|1663700|977900|08fa6e54-0af5-44f9-a5fd-c2e2d4947304|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|977900|990600|5633a4e9-16fc-4b34-8923-54100f4dfafe|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "power_pin_not_driven|1054100|774700|40739d7d-a232-4e2e-8c6d-c6bb83e27a9d|00000000-0000-0000-0000-000000000000|/50fb708d-2adf-435b-bbfa-ebc61b881914/676e16d2-eaa5-4320-a663-dac2f56a3fd6|/50fb708d-2adf-435b-bbfa-ebc61b881914/676e16d2-eaa5-4320-a663-dac2f56a3fd6|",
+        ""
+      ],
+      [
+        "same_local_global_label|1155700|317500|ec9de9f8-140d-4221-badf-b551a18de4c4|865de5af-fd63-4992-8885-c59baf0266ed|/50fb708d-2adf-435b-bbfa-ebc61b881914/f9df31f8-9305-4c2b-bbf4-468bfb60bb74|/50fb708d-2adf-435b-bbfa-ebc61b881914/f9df31f8-9305-4c2b-bbf4-468bfb60bb74|/50fb708d-2adf-435b-bbfa-ebc61b881914/f9df31f8-9305-4c2b-bbf4-468bfb60bb74",
+        ""
+      ],
+      [
+        "same_local_global_label|1155700|622300|93af1a7c-db37-45c8-9867-20bc39626899|8d740f3e-2a0e-4f25-8dd0-2ac0c4ccf8e5|/50fb708d-2adf-435b-bbfa-ebc61b881914/f9df31f8-9305-4c2b-bbf4-468bfb60bb74|/50fb708d-2adf-435b-bbfa-ebc61b881914/f9df31f8-9305-4c2b-bbf4-468bfb60bb74|/50fb708d-2adf-435b-bbfa-ebc61b881914/f9df31f8-9305-4c2b-bbf4-468bfb60bb74",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -517,7 +538,7 @@
         "microvia_drill": 0.1,
         "name": "HV",
         "pcb_color": "rgb(255, 229, 0)",
-        "priority": 2,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.5,
         "tuning_profile": "",
@@ -527,29 +548,14 @@
       {
         "clearance": 0.3,
         "diff_pair_gap": 0.25,
-        "diff_pair_width": 0.4,
+        "diff_pair_width": 0.5,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Power",
         "pcb_color": "rgb(255, 2, 12)",
-        "priority": 1,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.5,
-        "tuning_profile": "",
-        "via_diameter": 0.6,
-        "via_drill": 0.3
-      },
-      {
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "Signal",
-        "pcb_color": "rgb(0, 32, 255)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.5,
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3
@@ -570,60 +576,36 @@
         "pattern": "HV_N"
       },
       {
-        "netclass": "HV",
-        "pattern": "TX_Node_1"
-      },
-      {
-        "netclass": "HV",
-        "pattern": "TX_Node_2"
-      },
-      {
-        "netclass": "HV",
-        "pattern": "TX_NODE"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "DRV_P5V"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "DRV_N5V"
-      },
-      {
         "netclass": "Power",
         "pattern": "GND"
       },
       {
-        "netclass": "Signal",
-        "pattern": "CH1_INA"
+        "netclass": "HV",
+        "pattern": "*TX_Node*"
       },
       {
-        "netclass": "Signal",
-        "pattern": "CH1_INB"
+        "netclass": "HV",
+        "pattern": "+HV"
       },
       {
-        "netclass": "Signal",
-        "pattern": "CH1_OE"
+        "netclass": "HV",
+        "pattern": "-HV"
       },
       {
-        "netclass": "Signal",
-        "pattern": "CH2_INA"
+        "netclass": "HV",
+        "pattern": "*GATE_*"
       },
       {
-        "netclass": "Signal",
-        "pattern": "CH2_INB"
+        "netclass": "HV",
+        "pattern": "*DRN_*"
       },
       {
-        "netclass": "Signal",
-        "pattern": "CH2_OE"
+        "netclass": "Power",
+        "pattern": "*DRV_*"
       },
       {
-        "netclass": "Signal",
-        "pattern": "TRIG_OUT"
-      },
-      {
-        "netclass": "Signal",
-        "pattern": "TRIG_IN"
+        "netclass": "Power",
+        "pattern": "+5V"
       }
     ]
   },
@@ -705,12 +687,78 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Dielectric/Material",
+          "name": "Dielectric/Material",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Material",
+          "name": "Material",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Power Rating",
+          "name": "Power Rating",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Vf typical",
+          "name": "Vf typical",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Vf_typical",
+          "name": "Vf_typical",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Voltage Rating",
+          "name": "Voltage Rating",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Voltage/Current",
+          "name": "Voltage/Current",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Votlage Rating",
+          "name": "Votlage Rating",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Current Rating",
+          "name": "Current Rating",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -763,7 +811,7 @@
         "uuid": "50fb708d-2adf-435b-bbfa-ebc61b881914"
       }
     ],
-    "used_designators": "D10-11",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [

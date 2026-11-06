@@ -1,0 +1,161 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mils",
+    "date": "2026-08-08T19:15:31",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.0",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/50fb708d-2adf-435b-bbfa-ebc61b881914",
+            "violations": [
+                {
+                    "comment": "",
+                    "description": "Symbol 'MD1213' doesn't match copy in library 'components'",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1 [MD1213]",
+                            "pos": {
+                                "x": 38.5,
+                                "y": 39.0
+                            },
+                            "uuid": "5633a4e9-16fc-4b34-8923-54100f4dfafe"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "comment": "",
+                    "description": "Symbol 'TC6320' doesn't match copy in library 'components'",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol Q1 [TC6320]",
+                            "pos": {
+                                "x": 65.5,
+                                "y": 38.5
+                            },
+                            "uuid": "08fa6e54-0af5-44f9-a5fd-c2e2d4947304"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                }
+            ]
+        },
+        {
+            "path": "/POWER_SUPPLIES/",
+            "uuid_path": "/50fb708d-2adf-435b-bbfa-ebc61b881914/f9df31f8-9305-4c2b-bbf4-468bfb60bb74",
+            "violations": [
+                {
+                    "comment": "",
+                    "description": "Local and global labels have same name",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Global Label 'HV_P'",
+                            "pos": {
+                                "x": 45.5,
+                                "y": 12.5
+                            },
+                            "uuid": "ec9de9f8-140d-4221-badf-b551a18de4c4"
+                        },
+                        {
+                            "description": "Label 'HV_P'",
+                            "pos": {
+                                "x": 19.0,
+                                "y": 12.5
+                            },
+                            "uuid": "865de5af-fd63-4992-8885-c59baf0266ed"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "same_local_global_label"
+                },
+                {
+                    "comment": "",
+                    "description": "Local and global labels have same name",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Global Label 'HV_N'",
+                            "pos": {
+                                "x": 45.5,
+                                "y": 24.5
+                            },
+                            "uuid": "93af1a7c-db37-45c8-9867-20bc39626899"
+                        },
+                        {
+                            "description": "Label 'HV_N'",
+                            "pos": {
+                                "x": 19.5,
+                                "y": 24.5
+                            },
+                            "uuid": "8d740f3e-2a0e-4f25-8dd0-2ac0c4ccf8e5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "same_local_global_label"
+                }
+            ]
+        },
+        {
+            "path": "/CONTROL_IO/",
+            "uuid_path": "/50fb708d-2adf-435b-bbfa-ebc61b881914/62f441c6-6f3f-45f5-bd08-4c60fffeb5ec",
+            "violations": []
+        },
+        {
+            "path": "/TX_1/",
+            "uuid_path": "/50fb708d-2adf-435b-bbfa-ebc61b881914/676e16d2-eaa5-4320-a663-dac2f56a3fd6",
+            "violations": [
+                {
+                    "comment": "",
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 8 [VH, Power input, Line]",
+                            "pos": {
+                                "x": 41.5,
+                                "y": 30.5
+                            },
+                            "uuid": "40739d7d-a232-4e2e-8c6d-c6bb83e27a9d"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                }
+            ]
+        },
+        {
+            "path": "/TX_2/",
+            "uuid_path": "/50fb708d-2adf-435b-bbfa-ebc61b881914/01de8b43-061c-4044-8a00-10fbdb2b3b69",
+            "violations": []
+        }
+    ],
+    "source": "rev0_Tx_Circuit.kicad_sch"
+}

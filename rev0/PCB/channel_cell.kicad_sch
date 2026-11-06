@@ -1555,12 +1555,6 @@
 		(uuid "98314249-7f3f-45ff-addb-7d5e6a483dca")
 	)
 	(junction
-		(at 62.23 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9e80247a-de03-4dc1-80eb-4a482827a3ef")
-	)
-	(junction
 		(at 97.79 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1665,16 +1659,6 @@
 			(type default)
 		)
 		(uuid "15af9053-ce21-44f6-a987-5bea15969c63")
-	)
-	(wire
-		(pts
-			(xy 62.23 86.36) (xy 71.12 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "15cedddb-b6c6-48fd-bec4-d85b8c5452ad")
 	)
 	(wire
 		(pts
@@ -2168,16 +2152,6 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 86.36) (xy 62.23 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e668ed06-c3a1-4209-a3b9-8d95bbda24b0")
-	)
-	(wire
-		(pts
 			(xy 189.23 95.25) (xy 177.8 95.25)
 		)
 		(stroke
@@ -2235,6 +2209,66 @@
 			(type default)
 		)
 		(uuid "fe78f02c-ebbf-490f-940c-202bc30748ab")
+	)
+	(label "DRV_B"
+		(at 123.19 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0066f263-0e2a-49c3-9528-86bd2ed0cf04")
+	)
+	(label "GATE_P"
+		(at 147.32 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0b94fc25-db84-40b5-ae7b-a413af3a8c86")
+	)
+	(label "GATE_N"
+		(at 147.32 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "43fff979-c6d8-4079-9459-ade466142573")
+	)
+	(label "DRV_A"
+		(at 120.65 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5d38a6b3-bca4-49e6-abea-0993cfc3e9a5")
+	)
+	(label "DRN_N"
+		(at 181.61 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9f73a8cf-078f-4cca-97f2-09f90ee6ab8e")
+	)
+	(label "DRN_P"
+		(at 181.61 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bda201cd-f9a6-47a8-a1bf-7209bf80875b")
 	)
 	(global_label "DRV_N5V"
 		(shape input)
@@ -2345,7 +2379,7 @@
 	)
 	(hierarchical_label "OE"
 		(shape input)
-		(at 57.15 86.36 180)
+		(at 71.12 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2399,7 +2433,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1M / 0.25W"
+		(property "Value" "1M 0.25W"
 			(at 193.04 139.6999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2506,7 +2540,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "056c27fa-a241-421a-ab6e-7a6273caeee1")
-		(property "Reference" "INA_TP1"
+		(property "Reference" "INA_1"
 			(at 71.374 93.726 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2567,11 +2601,11 @@
 		(instances
 			(project "rev0_Tx_Circuit"
 				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/01de8b43-061c-4044-8a00-10fbdb2b3b69"
-					(reference "INA_TP2")
+					(reference "INA_2")
 					(unit 1)
 				)
 				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/676e16d2-eaa5-4320-a663-dac2f56a3fd6"
-					(reference "INA_TP1")
+					(reference "INA_1")
 					(unit 1)
 				)
 			)
@@ -2712,253 +2746,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 39.37 96.52 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0dbe1089-97b6-4350-915d-d4036148f02b")
-		(property "Reference" "INA_GND_TP1"
-			(at 41.91 91.9479 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "GND"
-			(at 41.91 94.4879 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
-			(at 44.45 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "PCB GND test point"
-			(at 39.37 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f7277b3f-c1e7-4efb-a389-86a765adf581")
-		)
-		(instances
-			(project "rev0_Tx_Circuit"
-				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/01de8b43-061c-4044-8a00-10fbdb2b3b69"
-					(reference "INA_GND_TP2")
-					(unit 1)
-				)
-				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/676e16d2-eaa5-4320-a663-dac2f56a3fd6"
-					(reference "INA_GND_TP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 39.37 107.95 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "185026c3-e64a-4e58-87b1-37e0e899d3be")
-		(property "Reference" "#PWR053"
-			(at 39.37 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 45.466 109.474 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 39.37 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 39.37 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 39.37 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ace8e4a3-3f6b-4418-9aed-dc64b7cd15da")
-		)
-		(instances
-			(project "rev0_Tx_Circuit"
-				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/01de8b43-061c-4044-8a00-10fbdb2b3b69"
-					(reference "#PWR054")
-					(unit 1)
-				)
-				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/676e16d2-eaa5-4320-a663-dac2f56a3fd6"
-					(reference "#PWR053")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 62.23 78.74 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "22fcb693-9238-4730-ac91-c653fff91ec3")
-		(property "Reference" "#PWR028"
-			(at 62.23 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 62.23 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 62.23 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 62.23 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 62.23 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e29f7b6c-38f9-41c4-af8d-631a4370cc64")
-		)
-		(instances
-			(project "rev0_Tx_Circuit"
-				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/01de8b43-061c-4044-8a00-10fbdb2b3b69"
-					(reference "#PWR040")
-					(unit 1)
-				)
-				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/676e16d2-eaa5-4320-a663-dac2f56a3fd6"
-					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_Coaxial")
 		(at 254 97.79 0)
 		(mirror x)
@@ -3067,7 +2854,7 @@
 				)
 			)
 		)
-		(property "Value" "MURS160"
+		(property "Value" "ES1D"
 			(at 193.04 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3088,7 +2875,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/murs160-d.pdf"
+		(property "Datasheet" "kicad-embed://ES1D-D.PDF"
 			(at 193.04 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -3099,7 +2886,7 @@
 				)
 			)
 		)
-		(property "Description" "Ultrafast recovery diode, 600V 1A, 25ns recovery, TC6320 protection"
+		(property "Description" "Ultrafast recovery diode, 200V 1A, 15ns trr, 7pF, TC6320 protection"
 			(at 193.04 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -3110,7 +2897,7 @@
 				)
 			)
 		)
-		(property "Voltage Rating" "600V"
+		(property "Voltage Rating" "200V"
 			(at 193.04 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -3121,7 +2908,7 @@
 				)
 			)
 		)
-		(property "Power Rating" "1A, 25ns recovery"
+		(property "Power Rating" "1A, 15ns recovery, 30A IFSM"
 			(at 193.04 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -3267,7 +3054,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0.47uF/50V"
+		(property "Value" "0.47uF 50V"
 			(at 125.73 132.0799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3385,7 +3172,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10nF/200V"
+		(property "Value" "10nF 200V"
 			(at 133.858 87.376 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3653,7 +3440,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1M / 0.25W"
+		(property "Value" "1M 0.25W"
 			(at 190.5 60.9599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3750,125 +3537,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 62.23 82.55 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "61a7cfb9-9183-4db0-af50-1720864c94fe")
-		(property "Reference" "R31"
-			(at 59.69 81.2799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10K"
-			(at 59.69 83.8199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 60.452 82.55 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 62.23 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Pull down resistor 10K"
-			(at 62.23 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage Rating" "150V"
-			(at 62.23 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power Rating" "0.125W"
-			(at 62.23 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Material" "Thick Film"
-			(at 62.23 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "7c8a6a23-23ca-4d17-9551-c65aa0a0df17")
-		)
-		(pin "1"
-			(uuid "68df7449-7abb-4687-9231-3f714efa9e32")
-		)
-		(instances
-			(project "rev0_Tx_Circuit"
-				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/01de8b43-061c-4044-8a00-10fbdb2b3b69"
-					(reference "R36")
-					(unit 1)
-				)
-				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/676e16d2-eaa5-4320-a663-dac2f56a3fd6"
-					(reference "R31")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 62.23 115.57 0)
 		(mirror y)
@@ -3946,88 +3614,6 @@
 				)
 				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/676e16d2-eaa5-4320-a663-dac2f56a3fd6"
 					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 39.37 107.95 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7fe064da-289f-4839-9330-dd00a8d20644")
-		(property "Reference" "INB_GND_TP1"
-			(at 41.91 103.3779 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "GND"
-			(at 41.91 105.9179 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
-			(at 44.45 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "PCB GND test point"
-			(at 39.37 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9cb16834-2ef8-43fa-8faa-2fdad2efd0b2")
-		)
-		(instances
-			(project "rev0_Tx_Circuit"
-				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/01de8b43-061c-4044-8a00-10fbdb2b3b69"
-					(reference "INB_GND_TP2")
-					(unit 1)
-				)
-				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/676e16d2-eaa5-4320-a663-dac2f56a3fd6"
-					(reference "INB_GND_TP1")
 					(unit 1)
 				)
 			)
@@ -4339,7 +3925,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF/250V"
+		(property "Value" "1uF 250V"
 			(at 177.8 62.2299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4350,7 +3936,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1812_4532Metric"
 			(at 180.6448 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -4405,7 +3991,7 @@
 				)
 			)
 		)
-		(property "Dielectric/Material" "C0G"
+		(property "Dielectric/Material" ""
 			(at 181.61 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -4457,7 +4043,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10nF/200V"
+		(property "Value" "10nF 200V"
 			(at 133.858 100.076 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4548,88 +4134,6 @@
 				)
 				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/676e16d2-eaa5-4320-a663-dac2f56a3fd6"
 					(reference "C12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 39.37 96.52 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ac39f457-3202-4297-b165-61f3940420cb")
-		(property "Reference" "#PWR051"
-			(at 39.37 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 45.466 98.044 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 39.37 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 39.37 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 39.37 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "74709af9-533b-4923-90b4-4fc9355aa1da")
-		)
-		(instances
-			(project "rev0_Tx_Circuit"
-				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/01de8b43-061c-4044-8a00-10fbdb2b3b69"
-					(reference "#PWR052")
-					(unit 1)
-				)
-				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/676e16d2-eaa5-4320-a663-dac2f56a3fd6"
-					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -5179,7 +4683,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cad2ed41-efcc-4b07-abe2-458d70bd1bb5")
-		(property "Reference" "INB_TP1"
+		(property "Reference" "INB_1"
 			(at 71.374 102.616 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5240,11 +4744,11 @@
 		(instances
 			(project "rev0_Tx_Circuit"
 				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/01de8b43-061c-4044-8a00-10fbdb2b3b69"
-					(reference "INB_TP2")
+					(reference "INB_2")
 					(unit 1)
 				)
 				(path "/50fb708d-2adf-435b-bbfa-ebc61b881914/676e16d2-eaa5-4320-a663-dac2f56a3fd6"
-					(reference "INB_TP1")
+					(reference "INB_1")
 					(unit 1)
 				)
 			)
@@ -5273,7 +4777,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF/250V"
+		(property "Value" "1uF 250V"
 			(at 177.8 138.4299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5284,7 +4788,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1812_4532Metric"
 			(at 180.6448 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -5339,7 +4843,7 @@
 				)
 			)
 		)
-		(property "Dielectric/Material" "C0G"
+		(property "Dielectric/Material" ""
 			(at 181.61 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -5391,7 +4895,7 @@
 				)
 			)
 		)
-		(property "Value" "MURS160"
+		(property "Value" "ES1D"
 			(at 193.04 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5412,7 +4916,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/murs160-d.pdf"
+		(property "Datasheet" "kicad-embed://ES1D-D.PDF"
 			(at 193.04 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -5423,7 +4927,7 @@
 				)
 			)
 		)
-		(property "Description" "Ultrafast recovery diode, 600V 1A, 25ns recovery, TC6320 protection"
+		(property "Description" "Ultrafast recovery diode, 200V 1A, 15ns trr, 7pF, TC6320 protection"
 			(at 193.04 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -5434,7 +4938,7 @@
 				)
 			)
 		)
-		(property "Voltage Rating" "600V"
+		(property "Voltage Rating" "200V"
 			(at 193.04 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -5445,7 +4949,7 @@
 				)
 			)
 		)
-		(property "Power Rating" "1A, 25ns recovery"
+		(property "Power Rating" "1A, 15ns recovery, 30A IFSM"
 			(at 193.04 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -5510,7 +5014,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0.47uF/50V"
+		(property "Value" "0.47uF 50V"
 			(at 116.84 68.5799 0)
 			(show_name no)
 			(do_not_autoplace no)

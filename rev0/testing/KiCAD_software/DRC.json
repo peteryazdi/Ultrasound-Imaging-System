@@ -1,0 +1,831 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-08-08T19:16:06",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "key": "silk_overlap"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.0",
+    "schematic_parity": [
+        {
+            "description": "Duplicate footprints",
+            "items": [
+                {
+                    "description": "Footprint REF**",
+                    "pos": {
+                        "x": 186.5,
+                        "y": 133.0
+                    },
+                    "uuid": "7d6868c4-c6c1-4001-9b4b-7fd8feda86e8"
+                },
+                {
+                    "description": "Footprint REF**",
+                    "pos": {
+                        "x": 186.837782,
+                        "y": 51.933884
+                    },
+                    "uuid": "78794580-8ce1-4197-acbc-51f4d1b38a89"
+                }
+            ],
+            "severity": "warning",
+            "type": "duplicate_footprints"
+        },
+        {
+            "description": "Duplicate footprints",
+            "items": [
+                {
+                    "description": "Footprint REF**",
+                    "pos": {
+                        "x": 105.0,
+                        "y": 52.0
+                    },
+                    "uuid": "7fa5e057-6253-49ae-8257-f3581e0b74e1"
+                },
+                {
+                    "description": "Footprint REF**",
+                    "pos": {
+                        "x": 186.837782,
+                        "y": 51.933884
+                    },
+                    "uuid": "78794580-8ce1-4197-acbc-51f4d1b38a89"
+                }
+            ],
+            "severity": "warning",
+            "type": "duplicate_footprints"
+        },
+        {
+            "description": "Duplicate footprints",
+            "items": [
+                {
+                    "description": "Footprint REF**",
+                    "pos": {
+                        "x": 105.0,
+                        "y": 133.0
+                    },
+                    "uuid": "e4bf031d-0b13-466e-9f7c-530a53c43edb"
+                },
+                {
+                    "description": "Footprint REF**",
+                    "pos": {
+                        "x": 186.837782,
+                        "y": 51.933884
+                    },
+                    "uuid": "78794580-8ce1-4197-acbc-51f4d1b38a89"
+                }
+            ],
+            "severity": "warning",
+            "type": "duplicate_footprints"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint C1",
+                    "pos": {
+                        "x": 129.282323,
+                        "y": 76.05
+                    },
+                    "uuid": "98214342-5f87-4694-879e-9bf481291c2a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint C2",
+                    "pos": {
+                        "x": 120.3,
+                        "y": 121.9
+                    },
+                    "uuid": "a019f3ec-5ed6-4330-9cc0-c8967c1bf26b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint D3",
+                    "pos": {
+                        "x": 114.4,
+                        "y": 103.3
+                    },
+                    "uuid": "e7b44230-f1b9-4514-b39f-cf526bcef724"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint D7",
+                    "pos": {
+                        "x": 115.4,
+                        "y": 95.43
+                    },
+                    "uuid": "2aa65fc0-c71d-4a54-8425-aed37602dbd1"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint D8",
+                    "pos": {
+                        "x": 124.66,
+                        "y": 72.85
+                    },
+                    "uuid": "c86a8675-8e2a-4e48-b136-10ce17e57cdf"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint HV_N1",
+                    "pos": {
+                        "x": 126.7,
+                        "y": 111.95
+                    },
+                    "uuid": "260bf593-ea46-4355-9dae-1c10a066c2d0"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint HV_P1",
+                    "pos": {
+                        "x": 136.4,
+                        "y": 88.35
+                    },
+                    "uuid": "3533e7ab-0225-4cfb-85bc-7ca5192847d7"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 106.5,
+                        "y": 73.5
+                    },
+                    "uuid": "57586f6b-3231-46aa-ab70-02e5da9c32d6"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint J2",
+                    "pos": {
+                        "x": 106.5,
+                        "y": 103.5
+                    },
+                    "uuid": "f29c29d5-2287-46a8-b334-4f3dfea8263c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint J3",
+                    "pos": {
+                        "x": 106.5,
+                        "y": 88.5
+                    },
+                    "uuid": "524d3ac7-6ee1-4ed6-8478-2436127957bd"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint J4",
+                    "pos": {
+                        "x": 106.5,
+                        "y": 118.5
+                    },
+                    "uuid": "de06c477-3c45-4f9a-91b7-895393718924"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint JP1",
+                    "pos": {
+                        "x": 115.2,
+                        "y": 114.3
+                    },
+                    "uuid": "5bf5650f-13a7-4a90-a5a2-1b1e51d245fb"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint JP2",
+                    "pos": {
+                        "x": 115.2,
+                        "y": 122.3
+                    },
+                    "uuid": "2d975c6c-f031-4b75-a721-4b691708cb76"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint LV_N1",
+                    "pos": {
+                        "x": 135.85,
+                        "y": 94.6
+                    },
+                    "uuid": "9d16f680-ac82-49c2-813d-17f3e7f67afe"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint LV_P1",
+                    "pos": {
+                        "x": 141.75,
+                        "y": 94.55
+                    },
+                    "uuid": "391d77a1-f8be-4005-a53b-32993233afe8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal doesn't match footprint given by symbol ()",
+            "items": [
+                {
+                    "description": "Footprint R1",
+                    "pos": {
+                        "x": 114.3,
+                        "y": 78.05
+                    },
+                    "uuid": "96f4b37a-ead7-4561-85dd-72de76cfedef"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint R1",
+                    "pos": {
+                        "x": 114.3,
+                        "y": 78.05
+                    },
+                    "uuid": "96f4b37a-ead7-4561-85dd-72de76cfedef"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint R2",
+                    "pos": {
+                        "x": 114.1,
+                        "y": 108.4
+                    },
+                    "uuid": "0755485d-9c8d-441c-a290-ca179675d6ba"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint D1",
+                    "pos": {
+                        "x": 162.1,
+                        "y": 61.26
+                    },
+                    "uuid": "209e4ec3-cd2b-410b-a97e-1c498c9ad72e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint D2",
+                    "pos": {
+                        "x": 142.1,
+                        "y": 58.71
+                    },
+                    "uuid": "edbcc26b-4da0-4bb7-a485-7085b14df821"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint D4",
+                    "pos": {
+                        "x": 152.1,
+                        "y": 58.69
+                    },
+                    "uuid": "0a5597cd-3d5a-4cd8-8a1b-255552774a99"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint D6",
+                    "pos": {
+                        "x": 132.1,
+                        "y": 58.76
+                    },
+                    "uuid": "251237af-9b05-4082-b464-2a210353ae73"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint GND1",
+                    "pos": {
+                        "x": 188.4,
+                        "y": 64.255
+                    },
+                    "uuid": "ed3e3847-7bd4-4f7b-a178-e64493367759"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint GND2",
+                    "pos": {
+                        "x": 187.95,
+                        "y": 121.55
+                    },
+                    "uuid": "bfa3f49c-3aa0-4644-aabd-5e6d6b3240d5"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint J5",
+                    "pos": {
+                        "x": 112.75,
+                        "y": 64.4
+                    },
+                    "uuid": "816c3e9b-8d28-472d-96da-d9bac4cc3b93"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint R4",
+                    "pos": {
+                        "x": 114.82,
+                        "y": 60.4
+                    },
+                    "uuid": "cb6f7223-06a3-4764-87c1-b0d46eaf1018"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint R9",
+                    "pos": {
+                        "x": 101.98,
+                        "y": 60.4
+                    },
+                    "uuid": "41c706c3-1391-4640-ad90-603ee4548cc8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint R11",
+                    "pos": {
+                        "x": 137.11,
+                        "y": 64.98
+                    },
+                    "uuid": "0e52fe1d-b31f-498a-8fb4-ad8ec18df580"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint R27",
+                    "pos": {
+                        "x": 152.35,
+                        "y": 74.54
+                    },
+                    "uuid": "2d01af36-55ff-4b55-b631-56f25c11c087"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint R28",
+                    "pos": {
+                        "x": 141.95,
+                        "y": 85.1
+                    },
+                    "uuid": "312833f8-5fe3-413a-8217-5bfe803d5936"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint R30",
+                    "pos": {
+                        "x": 148.1,
+                        "y": 74.58
+                    },
+                    "uuid": "f100de9d-c6cc-4f6b-b9b2-870a533ca1ba"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint TRIG_OUT1",
+                    "pos": {
+                        "x": 120.55,
+                        "y": 65.0
+                    },
+                    "uuid": "a8fa66c6-b512-4abf-85b3-ef2e7f7c82d5"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint TX_1",
+                    "pos": {
+                        "x": 185.1,
+                        "y": 64.255
+                    },
+                    "uuid": "13a99ab1-21e2-4635-9647-c5873c34c1c2"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint TX_2",
+                    "pos": {
+                        "x": 184.675,
+                        "y": 121.55
+                    },
+                    "uuid": "85e0223d-e134-4bfb-942a-fcc24f938d17"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint INA_1",
+                    "pos": {
+                        "x": 155.6,
+                        "y": 76.5
+                    },
+                    "uuid": "d5c10c21-0283-448a-9bfa-36fc3e986387"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint INB_1",
+                    "pos": {
+                        "x": 160.15,
+                        "y": 76.45
+                    },
+                    "uuid": "aab5494d-62f0-4fdd-9e62-a1dc87bed6cb"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint J8",
+                    "pos": {
+                        "x": 187.5875,
+                        "y": 72.85
+                    },
+                    "uuid": "0de3ffda-d5eb-4dc4-8a1c-1a4bcffff6ff"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint R14",
+                    "pos": {
+                        "x": 181.9,
+                        "y": 60.03
+                    },
+                    "uuid": "124d352a-ab26-40ff-9c1f-ee1c6299b30b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint R32",
+                    "pos": {
+                        "x": 171.74,
+                        "y": 79.755
+                    },
+                    "uuid": "33fd582d-c818-49de-b5bb-d11387c1ea94"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint INA_2",
+                    "pos": {
+                        "x": 159.05,
+                        "y": 111.15
+                    },
+                    "uuid": "b174396b-b8f8-4936-a2e4-520a9649adaf"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint INB_2",
+                    "pos": {
+                        "x": 154.05,
+                        "y": 110.95
+                    },
+                    "uuid": "35b0d6fc-3a02-43b1-84c0-9bc1e6c2f3eb"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint J9",
+                    "pos": {
+                        "x": 187.5875,
+                        "y": 112.65
+                    },
+                    "uuid": "a2a110c0-e788-41bd-a707-5b66315e7001"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint R17",
+                    "pos": {
+                        "x": 181.905,
+                        "y": 105.155
+                    },
+                    "uuid": "584b348f-6608-4054-82b7-828117cfb54b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint R37",
+                    "pos": {
+                        "x": 171.825,
+                        "y": 125.155
+                    },
+                    "uuid": "5b0bd33d-7486-428f-bd19-72cb87b8b177"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint REF**",
+                    "pos": {
+                        "x": 186.837782,
+                        "y": 51.933884
+                    },
+                    "uuid": "78794580-8ce1-4197-acbc-51f4d1b38a89"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint REF**",
+                    "pos": {
+                        "x": 186.5,
+                        "y": 133.0
+                    },
+                    "uuid": "7d6868c4-c6c1-4001-9b4b-7fd8feda86e8"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint REF**",
+                    "pos": {
+                        "x": 105.0,
+                        "y": 52.0
+                    },
+                    "uuid": "7fa5e057-6253-49ae-8257-f3581e0b74e1"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint REF**",
+                    "pos": {
+                        "x": 105.0,
+                        "y": 133.0
+                    },
+                    "uuid": "e4bf031d-0b13-466e-9f7c-530a53c43edb"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        }
+    ],
+    "source": "rev0_Tx_Circuit.kicad_pcb",
+    "unconnected_items": [],
+    "violations": []
+}
