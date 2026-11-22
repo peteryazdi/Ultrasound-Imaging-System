@@ -35,14 +35,8 @@ Rev 1 adds the receive chain that Rev 0 was missing. Each channel fires a transd
 
 ## Results
 
-Nothing built yet.
+In Progress.
 
-## Alongside Rev 1
-
-Work for the weeks while the boards are being designed and made, so the next revision starts faster:
-
-- Open up a GE ML6-15 probe, map its connector and plan a probe adapter board
-- Build up the FPGA firmware on the DE1-SoC: pulse timing first, then ADC capture
 
 ## Getting the files
 
