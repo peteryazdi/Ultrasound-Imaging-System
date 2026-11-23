@@ -81,7 +81,7 @@ The board was brought up in four stages, each with an acceptance criterion that 
 
 ```bash
 cd ~/Desktop
-git clone https://github.com/peteryazdi/Medical_Imaging_Ultrasound_fromScratch.git
+git clone https://github.com/peteryazdi/Ultrasound-Imaging-System.git
 ```
 
 This works in Terminal on macOS and Linux and in PowerShell on Windows. Open `rev0/PCB/rev0_Tx_Circuit.kicad_pro` with KiCad 10.

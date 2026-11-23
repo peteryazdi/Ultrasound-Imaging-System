@@ -42,7 +42,7 @@ In Progress.
 
 ```bash
 cd ~/Desktop
-git clone https://github.com/peteryazdi/Medical_Imaging_Ultrasound_fromScratch.git
+git clone https://github.com/peteryazdi/Ultrasound-Imaging-System.git
 ```
 
 This works in Terminal on macOS and Linux and in PowerShell on Windows. Open the `.kicad_pro` files with KiCad 10.
