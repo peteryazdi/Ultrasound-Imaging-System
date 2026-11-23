@@ -20,7 +20,7 @@ An ultrasound imaging system built from scratch: high-voltage transmit electroni
 Each revision has its own page with the design, files and results.
 
 <p align="center">
-  <img src="docs/images/system-block-diagram.svg" width="860" alt="System block diagram">
+  <img src="docs/images/system-block-diagram.png" width="860" alt="System block diagram">
 </p>
 
 ## Where it started
